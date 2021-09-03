@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "aql": {
+        "items.find": {
+          "repo": "firmware-snapshot-local",
+          "path": {
+            "$match": "driverx/fwex"
+          },
+          "$and": [
+            {
+              "name": {
+                "$nmatch": "107-02-001"
+              }
+            },
+            {
+              "name": {
+                "$nmatch": "107-02-002"
+              }
+            },
+               {
+              "name": {
+                "$nmatch": "107-02-003"
+              }
+            }
+          ],
+          "type": "folder"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "aql": {
+        "items.find": {
+          "repo": "default-docker-local",
+          "path": {
+            "$match": "thiethaa/demo1"
+          },
+          "name": {
+            "$match": "SNAPSHOT.*"
+          },
+          "type": "folder"
+        }
+      }
+    }
+  ]
+}

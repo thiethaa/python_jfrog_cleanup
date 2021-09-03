@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "aql": {
+        "items.find": {
+          "repo": "example-local-docker",
+          "path": {
+            "$match": "master"
+          },
+          "name": {
+            "$match": "SNAPSHOT_*"
+          },
+          "type": "folder"
+        }
+      },
+      "sortBy": [
+        "created"
+      ]
+    }
+  ]
+}
